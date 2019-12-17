@@ -1,7 +1,7 @@
 import os
 import cv2
 import numpy as np
-import mapper
+from PIL import Image
 
 class Scan():
     def scan_from_directory(self, source_path, output_path):
@@ -12,7 +12,9 @@ class Scan():
         for file in files:
             img_path = os.path.join(source_path, file)
             scanned = self.scan_journal(img_path)
-            cv2.imwrite(os.path.join(output_path, file), scanned)
+            scanned = Image.fromarray(scanned)
+            scanned.save(os.path.join(output_path, file), dpi=(300, 300))
+            # cv2.imwrite(os.path.join(output_path, file), scanned)
 
 
     def scan_journal(self, img_path):
