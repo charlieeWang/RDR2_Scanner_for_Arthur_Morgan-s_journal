@@ -25,5 +25,5 @@ I use the method from this [link](https://stackoverflow.com/questions/44752240/h
 
 <img src="https://github.com/charlieeWang/RDR2_Scanner_for_Arthur_Morgan-s_journal/blob/master/examples/shadows_out_norm.jpg" height="400" />
 
-- another example that skip the shadow part (a bit awkward), which is the current version.
+- another example that skip the shadow part (a bit awkward), which is the current version. I think this is more suitable to print separately.
 <img src="https://github.com/charlieeWang/RDR2_Scanner_for_Arthur_Morgan-s_journal/blob/master/output/20191213162042_1.jpg" height="400" />
