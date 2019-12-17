@@ -3,24 +3,6 @@ import cv2
 import numpy as np
 import mapper
 
-# import matplotlib.pyplot as plt
-# import matplotlib.image as mpimg
-#
-# img=mpimg.imread('20191213205544_1.jpg')
-# imgplot = plt.imshow(img)
-# plt.show()
-
-# image = cv2.imread("20191213162042_1.jpg")   #read in the image
-# orig = image.copy()
-#
-# gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  #RGB To Gray Scale
-# cv2.imwrite('Title.jpg', gray)
-#
-# alpha = 0
-# beta = 255
-#
-# gray = np.uint8(np.clip((alpha * gray + beta), 0, 255))
-
 class Scan():
     def scan_from_directory(self, source_path, output_path):
         if not os.path.exists(output_path):
@@ -46,13 +28,9 @@ class Scan():
 
         left = self.transform(origin_img, source_left_page, target_points)
         right = self.transform(origin_img, source_right_page, target_points)
-        #
-        # cv2.imwrite('Scanned_left.jpg', left)
-        # cv2.imwrite('Scanned_right.jpg', right)
 
         # concatenate
         concate = np.concatenate((left, right), axis=1)
-        # cv2.imwrite('concatenate.png', concate)
 
         return self.remove_shadow(concate)
 
@@ -79,9 +57,6 @@ class Scan():
         result = cv2.cvtColor(result, cv2.COLOR_BGR2GRAY)
         result_norm = cv2.merge(result_norm_planes)
         result_norm = cv2.cvtColor(result_norm, cv2.COLOR_BGR2GRAY)
-
-        # cv2.imwrite('shadows_out.png', result)
-        # cv2.imwrite('shadows_out_norm.png', result_norm)
 
         return result_norm
 
