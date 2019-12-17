@@ -4,7 +4,7 @@
 <img src="https://github.com/charlieeWang/RDR2_Scanner_for_Arthur_Morgan-s_journal/blob/master/examples/20191213162042_1.jpg" height="500" />
 
 I chose different coordinates on two pages, then do a simple perspective transform using OpenCV.
-The output image size is been roughly resized.
+The output image size has been roughly resized.
 
 #### Example transform of the left page
 <img src="https://github.com/charlieeWang/RDR2_Scanner_for_Arthur_Morgan-s_journal/blob/master/examples/Scanned_left.jpg" height="400" />
