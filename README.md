@@ -27,3 +27,6 @@ I use the method from this [link](https://stackoverflow.com/questions/44752240/h
 
 - another example that skip the shadow part (a bit awkward), which is the current version. I think this is more suitable to print separately.
 <img src="https://github.com/charlieeWang/RDR2_Scanner_for_Arthur_Morgan-s_journal/blob/master/output/20191213162042_1.jpg" height="400" />
+
+### Use
+Directly run `python Scanner.py`, it will scan all the screenshots in `test` folder, and output to `output` folder.
